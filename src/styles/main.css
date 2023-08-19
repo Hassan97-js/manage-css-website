@@ -1,0 +1,46 @@
+body {
+  background-color: var(--neutral-very-light-gray);
+  font-size: var(--fs-base);
+  font-family: var(--fm-primary);
+  font-weight: var(--fw-regular);
+  color: var(--neutral-very-dark-blue);
+}
+
+:is(h1, h2, h3) {
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.07em;
+}
+
+:is(h1, h2) {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+  line-height: 1.2;
+}
+
+p {
+  max-width: 60ch;
+}
+
+nav {
+  font-weight: var(--fw-semi-bold);
+}
+
+a {
+  color: inherit;
+}
+
+nav ul a,
+header a.logo-link {
+  text-decoration: none;
+}
