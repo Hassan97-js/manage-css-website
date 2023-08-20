@@ -12,15 +12,14 @@
     <title>Dev Server</title>
   </head>
   <body>
-    <header class="primary-header">
-      <div class="container">
-        <a class="logo-link" href="#">
-          <img src="/svg/logo.svg" alt="Logo Image" />
-          <span class="logo-text">manage</span>
+    <header class="[ primary-header ]">
+      <div class="[ container ]">
+        <a class="[ logo-link ]" href="#">
+          <img src="/svgs/logo.svg" alt="Logo Image" />
         </a>
 
-        <nav class="top-navbar">
-          <ul class="top-navbar-list" role="list">
+        <nav class="[ top-navbar ]">
+          <ul class="[ top-navbar-list ] [ flex ]" role="list">
             <li>
               <a href="#">Pricing</a>
             </li>
@@ -38,33 +37,89 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="btn btn-primary">Get Started</button>
+        <button type="button" class="[ btn btn-primary ]">Get Started</button>
       </div>
     </header>
 
-    <main class="main">
-      <section>
-        <div class="container">
-          <div class="even-cols">
-            <div class="left">
-              <h1>
-                Focused on web standards and modern web app UX, you're simply going
-                to build better websites
-              </h1>
-              <h2>
-                Focused on web standards and modern web app UX, you're simply going
-                to build better websites
-              </h2>
-              <h3>
-                Focused on web standards and modern web app UX, you're simply going
-                to build better websites
-              </h3>
+    <main class="[ main ]">
+      <section class="[ hero ] [ section ]">
+        <div class="[ container ]">
+          <div class="[ even-cols ]">
+            <div class="[ left ]">
+              <h1>Bring everyone together to build better products.</h1>
+              <p>
+                Manage makes it simple for software teams to plan day to day tasks
+                while keeping the larger team goals in view.
+              </p>
+              <button type="button" class="[ btn-primary ]">Get Started</button>
+              <div>
+                <img src="/svgs/illustration-intro.svg" alt="" />
+              </div>
             </div>
-            <div class="right"></div>
+            <div class="[ right ]"></div>
           </div>
         </div>
       </section>
+      <section class="[ explain ] [ section ]">
+        <div class="[ container ]">
+          <div class="[ even-cols ]">
+            <div class="[ left ]">
+              <h2>What&apos;s different about Manage?</h2>
+              <p>
+                Manage provides all the functionality your team needs, without the
+                complexity. Our software is tailor-made for modern digital product
+                teams.
+              </p>
+            </div>
+            <div class="[ right ]">
+              <ul class="[ numbered-items ]" role="list">
+                <li>
+                  <h3>Track company-wide progress</h3>
+                  <p>
+                    See how your day-to-day tasks fit into the wider vision. Go from
+                    tracking progress at the milestone level all the way done to the
+                    smallest of details. Never lose sight of the bigger picture
+                    again.
+                  </p>
+                </li>
+                <li>
+                  <h3>Advanced built-in reports</h3>
+                  <p>
+                    Set internal delivery estimates and track progress toward company
+                    goals. Our customisable dashboard helps you build out the reports
+                    you need to keep key stakeholders informed.
+                  </p>
+                </li>
+                <li>
+                  <h3>Everything you need in one place</h3>
+                  <p>
+                    Stop jumping from one service to another to communicate, store
+                    files, track tasks and share documents. Manage offers an
+                    all-in-one team productivity solution.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="[ carousel ] [ section text-center ]">
+        <h2 class="[ text-center ]">What they&apos;ve said</h2>
+        <!-- Carousel here -->
+        <button type="button" class="[ btn-primary ]">Get Started</button>
+      </section>
+      <section class="[ cta ] [ section bg-primary-bright-red text-center ]">
+        <div class="[ container flex ]">
+          <h2 class="[ text-very-light-gray ]">
+            Simplify how your team works today.
+          </h2>
+          <button type="button" class="[ btn-secondary ]">Get Started</button>
+        </div>
+      </section>
     </main>
+    <footer class="[ primary-footer ] [ text-center ]">
+      <p class="[ copyright ] [ mx-auto ]">Lorem ipsum &copy; dolor</p>
+    </footer>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

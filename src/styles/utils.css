@@ -1,6 +1,34 @@
+/* Layout */
 .container {
   max-width: 90rem;
   margin-inline: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-inline: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Spacing */
+.mx-auto {
+  margin-inline: auto;
+}
+
+.section {
+  padding-top: var(--spacer-28);
+  padding-bottom: var(--spacer-28);
+}
+
+/* Backgroud */
+.bg-primary-bright-red {
+  background: var(--primary-bright-red);
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-very-light-gray {
+  color: var(--neutral-very-light-gray);
 }

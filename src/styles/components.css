@@ -1,4 +1,5 @@
-/* .primary-header {
-  background-color: var(--primary-dark-blue);
-  color: var(--neutral-very-light-gray);
-} */
+.primary-header,
+.primary-footer {
+  padding-top: var(--spacer-12);
+  padding-bottom: var(--spacer-12);
+}
