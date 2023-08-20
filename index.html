@@ -12,14 +12,14 @@
     <title>Dev Server</title>
   </head>
   <body>
-    <header class="[ primary-header ]">
-      <div class="[ container ]">
+    <header class="[ primary-header ] [ py-12 ]">
+      <div class="[ container flex justify-between items-center]">
         <a class="[ logo-link ]" href="#">
           <img src="/svgs/logo.svg" alt="Logo Image" />
         </a>
 
-        <nav class="[ top-navbar ]">
-          <ul class="[ top-navbar-list ] [ flex ]" role="list">
+        <nav class="[ top-navbar ] [ hidden ]">
+          <ul aria-label="Primary" class="[ top-navbar-list ] [ flex ]" role="list">
             <li>
               <a href="#">Pricing</a>
             </li>
@@ -37,88 +37,167 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="[ btn btn-primary ]">Get Started</button>
+        <button type="button" class="[ btn btn-primary top-navbar-btn hidden ]">
+          Get Started
+        </button>
+        <button type="button" class="[ hamburger ]">Hamburger</button>
       </div>
     </header>
 
     <main class="[ main ]">
       <section class="[ hero ] [ section ]">
         <div class="[ container ]">
-          <div class="[ even-cols ]">
+          <div class="[ flex flex-col ]">
             <div class="[ left ]">
               <h1>Bring everyone together to build better products.</h1>
               <p>
                 Manage makes it simple for software teams to plan day to day tasks
                 while keeping the larger team goals in view.
               </p>
-              <button type="button" class="[ btn-primary ]">Get Started</button>
-              <div>
-                <img src="/svgs/illustration-intro.svg" alt="" />
-              </div>
+              <button type="button" class="[ btn btn-primary ]">Get Started</button>
             </div>
-            <div class="[ right ]"></div>
+            <div class="[ right ]">
+              <img src="/svgs/illustration-intro.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
       <section class="[ explain ] [ section ]">
-        <div class="[ container ]">
-          <div class="[ even-cols ]">
-            <div class="[ left ]">
-              <h2>What&apos;s different about Manage?</h2>
-              <p>
-                Manage provides all the functionality your team needs, without the
-                complexity. Our software is tailor-made for modern digital product
-                teams.
-              </p>
-            </div>
-            <div class="[ right ]">
-              <ul class="[ numbered-items ]" role="list">
-                <li>
-                  <h3>Track company-wide progress</h3>
-                  <p>
-                    See how your day-to-day tasks fit into the wider vision. Go from
-                    tracking progress at the milestone level all the way done to the
-                    smallest of details. Never lose sight of the bigger picture
-                    again.
-                  </p>
-                </li>
-                <li>
-                  <h3>Advanced built-in reports</h3>
-                  <p>
-                    Set internal delivery estimates and track progress toward company
-                    goals. Our customisable dashboard helps you build out the reports
-                    you need to keep key stakeholders informed.
-                  </p>
-                </li>
-                <li>
-                  <h3>Everything you need in one place</h3>
-                  <p>
-                    Stop jumping from one service to another to communicate, store
-                    files, track tasks and share documents. Manage offers an
-                    all-in-one team productivity solution.
-                  </p>
-                </li>
-              </ul>
-            </div>
+        <div class="[ container flex flex-col ]">
+          <div class="[ left ]">
+            <h2>What&apos;s different about Manage?</h2>
+            <p>
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams.
+            </p>
+          </div>
+          <div class="[ right ]">
+            <ul class="[ explain-list ]" role="list">
+              <li>
+                <h3>Track company-wide progress</h3>
+                <p>
+                  See how your day-to-day tasks fit into the wider vision. Go from
+                  tracking progress at the milestone level all the way done to the
+                  smallest of details. Never lose sight of the bigger picture again.
+                </p>
+              </li>
+              <li>
+                <h3>Advanced built-in reports</h3>
+                <p>
+                  Set internal delivery estimates and track progress toward company
+                  goals. Our customisable dashboard helps you build out the reports
+                  you need to keep key stakeholders informed.
+                </p>
+              </li>
+              <li>
+                <h3>Everything you need in one place</h3>
+                <p>
+                  Stop jumping from one service to another to communicate, store
+                  files, track tasks and share documents. Manage offers an all-in-one
+                  team productivity solution.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="[ carousel ] [ section text-center ]">
+      <section class="[ carousel ] [ section flex flex-col ]">
         <h2 class="[ text-center ]">What they&apos;ve said</h2>
         <!-- Carousel here -->
-        <button type="button" class="[ btn-primary ]">Get Started</button>
+        <button type="button" class="[ btn btn-primary ]">Get Started</button>
       </section>
-      <section class="[ cta ] [ section bg-primary-bright-red text-center ]">
-        <div class="[ container flex ]">
+      <section class="[ cta ] [ section bg-primary-bright-red ]">
+        <div class="[ container flex flex-col ]">
           <h2 class="[ text-very-light-gray ]">
             Simplify how your team works today.
           </h2>
-          <button type="button" class="[ btn-secondary ]">Get Started</button>
+          <button type="button" class="[ btn btn-secondary ]">Get Started</button>
         </div>
       </section>
     </main>
-    <footer class="[ primary-footer ] [ text-center ]">
-      <p class="[ copyright ] [ mx-auto ]">Lorem ipsum &copy; dolor</p>
+
+    <footer class="[ primary-footer ] [ text-center py-12 ]">
+      <div class="[ primary-footer-inner ] [ container flex flex-col ]">
+        <div class="col">
+          <a class="[ logo-link ]" href="#">
+            <img src="/svgs/logo.svg" alt="Logo Image" />
+          </a>
+
+          <ul role="list" class="social-links" aria-label="Social Links">
+            <li class="social-link">
+              <a aria-label="A Facebook icon link" href="#">
+                <img src="/svgs/icon-facebook.svg" alt="A Facebook icon" />
+              </a>
+            </li>
+            <li class="social-link">
+              <a aria-label="An Instagram icon link" href="#">
+                <img src="/svgs/icon-instagram.svg" alt="An Instagram icon" />
+              </a>
+            </li>
+            <li class="social-link">
+              <a aria-label="A pinterest icon link" href="#">
+                <img src="/svgs/icon-pinterest.svg" alt="A pinterest icon"
+              /></a>
+            </li>
+            <li class="social-link">
+              <a aria-label="A Twitter icon link" href="#">
+                <img src="/svgs/icon-twitter.svg" alt="A Twitter icon"
+              /></a>
+            </li>
+            <li class="social-link">
+              <a aria-label="A Youtube icon link" href="#">
+                <img src="/svgs/icon-youtube.svg" alt="A Youtube icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="[ bottom-navbar ]">
+          <ul
+            class="[ bottom-navbar-list ] [ flex ]"
+            role="list"
+            aria-label="Footer">
+            <div class="col">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Product</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+            </div>
+            <div class="col">
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Community</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="[ col ]">
+          <form>
+            <div class="[ subscribe ] [ form-control ]">
+              <input type="email" class="[ subscribe-input ]" />
+            </div>
+
+            <button type="submit" class="[ btn btn-primary btn-rounded ]">Go</button>
+          </form>
+
+          <p class="[ copyright ] [ mx-auto text-center ]">
+            &copy; Copyright 2024. All rights reserved
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>

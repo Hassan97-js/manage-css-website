@@ -19,14 +19,9 @@
     --fs-4xl: 3.815rem;
   }
 
-  :is(h1, h2, h3) {
+  :is(h1, h2, h3, p) {
     text-align: left;
   }
-
-  /* p {
-    margin-left: 0;
-    margin-right: 0;
-  } */
 }
 /* 992px */
 @media only screen and (min-width: 62em) {
@@ -39,8 +34,24 @@
   }
 }
 /* 1280px */
-/* @media only screen and (min-width: 80em) {
-} */
+@media only screen and (min-width: 80em) {
+  .hamburger {
+    display: none;
+  }
+
+  .top-navbar {
+    display: block;
+  }
+
+  .top-navbar-btn {
+    display: inline-flex;
+  }
+
+  .primary-footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /* 1536px */
 @media only screen and (min-width: 96em) {
   :root {

@@ -9,9 +9,30 @@
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Spacing */
 .mx-auto {
   margin-inline: auto;
+}
+
+.py-12 {
+  padding-top: var(--spacer-12);
+  padding-bottom: var(--spacer-12);
 }
 
 .section {

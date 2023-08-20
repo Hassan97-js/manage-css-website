@@ -1,5 +1,20 @@
-.primary-header,
+/* Header and Top Navbar */
+.top-navbar {
+  font-weight: var(--fw-semi-bold);
+}
+
+.top-navbar ul a,
+.primary-header a.logo-link {
+  text-decoration: none;
+  letter-spacing: -0.04em;
+}
+
+/* CTA */
+.cta h2 {
+  letter-spacing: -0.03em;
+}
+
+/* Footer */
 .primary-footer {
-  padding-top: var(--spacer-12);
-  padding-bottom: var(--spacer-12);
+  background: var(--neutral-very-dark-blue);
 }
