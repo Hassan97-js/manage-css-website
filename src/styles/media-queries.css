@@ -1,4 +1,4 @@
-/* 480px */
+/* sm:480px */
 @media only screen and (min-width: 30em) {
   :root {
     --fs-lg: 1.25rem;
@@ -8,7 +8,7 @@
     --fs-4xl: 3.052rem;
   }
 }
-/* 768px */
+/* md:768px */
 @media only screen and (min-width: 48em) {
   :root {
     --fs-base: 1.25rem;
@@ -23,7 +23,7 @@
     text-align: left;
   }
 }
-/* 992px */
+/* lg:992px */
 @media only screen and (min-width: 62em) {
   :root {
     --fs-lg: 1.953rem;
@@ -33,26 +33,37 @@
     --fs-4xl: 4.768rem;
   }
 }
-/* 1280px */
+/* xl:1280px */
 @media only screen and (min-width: 80em) {
-  .hamburger {
+  .xl-hidden {
     display: none;
   }
 
-  .top-navbar {
+  .xl-flex {
+    display: flex;
+  }
+
+  .xl-items-center {
+    align-items: center;
+  }
+
+  .xl-block {
     display: block;
   }
 
-  .top-navbar-btn {
+  .xl-inline-flex {
     display: inline-flex;
   }
 
-  .primary-footer-inner {
+  .xl-flex-row {
     flex-direction: row;
+  }
+
+  .xl-justify-between {
     justify-content: space-between;
   }
 }
-/* 1536px */
+/* 2xl:1536px */
 @media only screen and (min-width: 96em) {
   :root {
     --fs-lg: 2.441rem;

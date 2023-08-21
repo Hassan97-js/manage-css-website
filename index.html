@@ -14,12 +14,16 @@
   <body>
     <header class="[ primary-header ] [ py-12 ]">
       <div class="[ container flex justify-between items-center]">
-        <a class="[ logo-link ]" href="#">
+        <a class="[ logo-link ] [ flex justify-center items-center ]" href="#">
           <img src="/svgs/logo.svg" alt="Logo Image" />
         </a>
 
-        <nav class="[ top-navbar ] [ hidden ]">
-          <ul aria-label="Primary" class="[ top-navbar-list ] [ flex ]" role="list">
+        <nav class="[ primary-navbar ] [ hidden xl-flex xl-items-center ]">
+          <ul
+            id="primary-navigation"
+            aria-label="Primary"
+            class="[ primary-navigation-list ] [ flex items-center ]"
+            role="list">
             <li>
               <a href="#">Pricing</a>
             </li>
@@ -37,28 +41,33 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="[ btn btn-primary top-navbar-btn hidden ]">
+        <button type="button" class="[ btn btn-primary ] [ hidden xl-inline-flex ]">
           Get Started
         </button>
-        <button type="button" class="[ hamburger ]">Hamburger</button>
+        <button
+          id="menu-toggler"
+          type="button"
+          class="[ hamburger ] [ xl-hidden ]"
+          aria-controls="primary-navigation">
+          <!-- <span class="[ visually-hidden ]">Menu</span> -->
+          <span class="hamburger-icon"></span>
+        </button>
       </div>
     </header>
 
     <main class="[ main ]">
       <section class="[ hero ] [ section ]">
-        <div class="[ container ]">
-          <div class="[ flex flex-col ]">
-            <div class="[ left ]">
-              <h1>Bring everyone together to build better products.</h1>
-              <p>
-                Manage makes it simple for software teams to plan day to day tasks
-                while keeping the larger team goals in view.
-              </p>
-              <button type="button" class="[ btn btn-primary ]">Get Started</button>
-            </div>
-            <div class="[ right ]">
-              <img src="/svgs/illustration-intro.svg" alt="" />
-            </div>
+        <div class="[ container flex flex-col ]">
+          <div class="[ left ]">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>
+              Manage makes it simple for software teams to plan day to day tasks
+              while keeping the larger team goals in view.
+            </p>
+            <button type="button" class="[ btn btn-primary ]">Get Started</button>
+          </div>
+          <div class="[ right ]">
+            <img src="/svgs/illustration-intro.svg" alt="" />
           </div>
         </div>
       </section>
@@ -107,19 +116,17 @@
         <!-- Carousel here -->
         <button type="button" class="[ btn btn-primary ]">Get Started</button>
       </section>
-      <section class="[ cta ] [ section bg-primary-bright-red ]">
+      <section class="[ cta ] [ section bg-primary-red-100 ]">
         <div class="[ container flex flex-col ]">
-          <h2 class="[ text-very-light-gray ]">
-            Simplify how your team works today.
-          </h2>
+          <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
           <button type="button" class="[ btn btn-secondary ]">Get Started</button>
         </div>
       </section>
     </main>
 
     <footer class="[ primary-footer ] [ text-center py-12 ]">
-      <div class="[ primary-footer-inner ] [ container flex flex-col ]">
-        <div class="col">
+      <div class="[ container flex flex-col xl-flex-row xl-justify-between ]">
+        <div class="[ col ]">
           <a class="[ logo-link ]" href="#">
             <img src="/svgs/logo.svg" alt="Logo Image" />
           </a>
@@ -190,7 +197,7 @@
               <input type="email" class="[ subscribe-input ]" />
             </div>
 
-            <button type="submit" class="[ btn btn-primary btn-rounded ]">Go</button>
+            <button type="submit" class="[ btn btn-primary ]">Go</button>
           </form>
 
           <p class="[ copyright ] [ mx-auto text-center ]">

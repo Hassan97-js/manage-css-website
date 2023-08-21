@@ -1,13 +1,13 @@
 body {
-  background-color: var(--neutral-very-light-gray);
+  background-color: var(--neutral-light-gray);
   font-size: var(--fs-base);
   font-family: var(--fm-primary);
   font-weight: var(--fw-regular);
-  color: var(--neutral-dark-grayish-blue);
+  color: var(--neutral-grayish-blue);
 }
 
 :is(h1, h2, h3) {
-  color: var(--primary-dark-blue);
+  color: var(--primary-blue-100);
   font-weight: var(--fw-bold);
   text-align: center;
   letter-spacing: -0.07em;
@@ -37,6 +37,6 @@ p {
 }
 
 a {
-  color: var(--primary-dark-blue);
+  color: var(--primary-blue-100);
   letter-spacing: -0.04em;
 }

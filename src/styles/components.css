@@ -1,9 +1,82 @@
-/* Header and Top Navbar */
-.top-navbar {
+/* Btn */
+.btn {
+  padding: 1em 1.75em;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 1.125em 1em -1em var(--primary-red-300);
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  color: var(--neutral-light-gray);
+  background-color: var(--primary-red-100);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--primary-red-200);
+}
+
+.btn-secondary {
+  color: var(--primary-red-100);
+  background-color: var(--neutral-light-gray);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  opacity: 0.85;
+}
+
+/* Hamburger */
+.hamburger {
+  padding: 1em;
+  background: none;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  display: block;
+  background-color: var(--primary-blue-100);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.hamburger-icon::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.hamburger-icon::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.hamburger.active .hamburger-icon::before {
+  margin-top: 0px;
+  transform: rotate(225deg);
+}
+
+.hamburger.active .hamburger-icon {
+  background: transparent;
+}
+
+.hamburger.active .hamburger-icon::after {
+  margin-top: 0px;
+  transform: rotate(-225deg);
+}
+
+/* Primary Header and Primary Navbar */
+.primary-navbar {
   font-weight: var(--fw-semi-bold);
 }
 
-.top-navbar ul a,
+.primary-navbar ul a,
 .primary-header a.logo-link {
   text-decoration: none;
   letter-spacing: -0.04em;
@@ -16,5 +89,5 @@
 
 /* Footer */
 .primary-footer {
-  background: var(--neutral-very-dark-blue);
+  background: var(--neutral-dark-blue);
 }
