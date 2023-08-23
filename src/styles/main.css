@@ -1,7 +1,13 @@
+html,
+body {
+  position: relative;
+  overflow: hidden;
+}
+
 body {
   background-color: var(--neutral-light-gray);
-  font-size: var(--fs-base);
   font-family: var(--fm-primary);
+  font-size: var(--fs-base);
   font-weight: var(--fw-regular);
   color: var(--neutral-grayish-blue);
 }

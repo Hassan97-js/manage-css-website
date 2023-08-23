@@ -8,12 +8,12 @@
   --primary-red-100: #f25f3a;
   --primary-red-200: #da5634;
   --primary-red-300: #c24c2e;
-  --primary-red-400: hsl(12, 61%, 41%);
+  --primary-red-400: #a84229;
 
-  --neutral-grayish-blue: hsl(227, 12%, 61%);
-  --neutral-dark-blue: hsl(233, 12%, 13%);
-  --neutral-pale-red: hsl(13, 100%, 96%);
-  --neutral-light-gray: hsl(0, 0%, 98%);
+  --neutral-grayish-blue: #9095a7;
+  --neutral-dark-blue: #1d1e25;
+  --neutral-pale-red: #ffefeb;
+  --neutral-light-gray: #fafafa;
 
   /* Font */
   --fs-xs: 0.75rem;
@@ -32,6 +32,12 @@
   --fw-regular: 400;
   --fw-semi-bold: 500;
   --fw-bold: 700;
+
+  /* Radiuses */
+  --radius-base: 0.25rem;
+
+  /* Shadows */
+  --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   /* Spacing */
   --spacer-0: 0;

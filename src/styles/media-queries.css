@@ -62,6 +62,11 @@
   .xl-justify-between {
     justify-content: space-between;
   }
+
+  .logo-link {
+    width: auto;
+    margin-top: 0;
+  }
 }
 /* 2xl:1536px */
 @media only screen and (min-width: 96em) {

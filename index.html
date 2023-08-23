@@ -18,11 +18,11 @@
           <img src="/svgs/logo.svg" alt="Logo Image" />
         </a>
 
-        <nav class="[ primary-navbar ] [ hidden xl-flex xl-items-center ]">
+        <nav class="[ primary-navbar ] [ xl-items-center ]">
           <ul
             id="primary-navigation"
             aria-label="Primary"
-            class="[ primary-navigation-list ] [ flex items-center ]"
+            class="[ primary-navigation-list ] [ flex flex-col justify-center items-center ]"
             role="list">
             <li>
               <a href="#">Pricing</a>
@@ -49,8 +49,8 @@
           type="button"
           class="[ hamburger ] [ xl-hidden ]"
           aria-controls="primary-navigation">
-          <!-- <span class="[ visually-hidden ]">Menu</span> -->
-          <span class="hamburger-icon"></span>
+          <span class="[ visually-hidden ]">Menu</span>
+          <span aria-hidden="true" class="hamburger-icon"></span>
         </button>
       </div>
     </header>
@@ -143,7 +143,7 @@
               </a>
             </li>
             <li class="social-link">
-              <a aria-label="A pinterest icon link" href="#">
+              <a aria-label="A Pinterest icon link" href="#">
                 <img src="/svgs/icon-pinterest.svg" alt="A pinterest icon"
               /></a>
             </li>
