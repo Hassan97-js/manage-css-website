@@ -8,8 +8,6 @@ import "./styles/media-queries.css";
 const menuTogglerButton = document.getElementById("menu-toggler");
 const primaryNavbarElement = document.body.querySelector(".primary-navbar");
 
-console.log(primaryNavbarElement);
-
 menuTogglerButton?.addEventListener("click", () => {
   menuTogglerButton.classList.toggle("active");
   primaryNavbarElement?.classList.toggle("active");

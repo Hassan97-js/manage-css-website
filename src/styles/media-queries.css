@@ -1,40 +1,58 @@
 /* sm:480px */
 @media only screen and (min-width: 30em) {
   :root {
-    --fs-lg: 1.25rem;
-    --fs-xl: 1.563rem;
-    --fs-2xl: 1.953rem;
-    --fs-3xl: 2.441rem;
-    --fs-4xl: 3.052rem;
+    --fs-nav-link: 1.802rem;
   }
 }
 /* md:768px */
 @media only screen and (min-width: 48em) {
   :root {
-    --fs-base: 1.25rem;
-    --fs-lg: 1.563rem;
-    --fs-xl: 1.953rem;
-    --fs-2xl: 2.441rem;
-    --fs-3xl: 3.052rem;
-    --fs-4xl: 3.815rem;
+    --fs-base: 1.266rem;
+    --fs-lg: 1.602rem;
+    --fs-xl: 1.802rem;
+    --fs-2xl: 2.027rem;
+    --fs-3xl: 2.281rem;
   }
 
-  :is(h1, h2, h3, p) {
-    text-align: left;
+  :is(h1, h2) {
+    line-height: 1.2;
   }
 }
 /* lg:992px */
 @media only screen and (min-width: 62em) {
   :root {
-    --fs-lg: 1.953rem;
-    --fs-xl: 2.441rem;
-    --fs-2xl: 3.052rem;
-    --fs-3xl: 3.815rem;
-    --fs-4xl: 4.768rem;
+    --fs-lg: 1.802rem;
+    --fs-xl: 2.027rem;
+    --fs-2xl: 2.281rem;
+    --fs-3xl: 2.566rem;
+  }
+
+  .heading-primary {
+    text-align: left;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacer-20);
+  }
+
+  .hero-left {
+    align-items: flex-start;
+  }
+
+  .hero-desc {
+    text-align: left;
   }
 }
 /* xl:1280px */
 @media only screen and (min-width: 80em) {
+  :root {
+    --fs-3xl: 3.247rem;
+
+    --fs-nav-link: 1.125rem;
+  }
+
   .xl-hidden {
     display: none;
   }
@@ -63,6 +81,25 @@
     justify-content: space-between;
   }
 
+  .primary-navbar {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .primary-navigation-list {
+    flex-direction: row;
+  }
+
+  .primary-navbar ul a {
+    font-weight: var(--fw-semi-bold);
+  }
+
   .logo-link {
     width: auto;
     margin-top: 0;
@@ -71,10 +108,9 @@
 /* 2xl:1536px */
 @media only screen and (min-width: 96em) {
   :root {
-    --fs-lg: 2.441rem;
-    --fs-xl: 3.052rem;
-    --fs-2xl: 3.815rem;
-    --fs-3xl: 4.768rem;
-    --fs-4xl: 5.96rem;
+    --fs-lg: 2.027rem;
+    --fs-xl: 2.281rem;
+    --fs-2xl: 2.566rem;
+    --fs-3xl: 4.11rem;
   }
 }

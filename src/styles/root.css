@@ -16,14 +16,15 @@
   --neutral-light-gray: #fafafa;
 
   /* Font */
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-base: 1rem;
-  --fs-lg: 1.25rem;
-  --fs-xl: 1.563rem;
-  --fs-2xl: 1.953rem;
-  --fs-3xl: 2.441rem;
-  --fs-4xl: 3.052rem;
+  --fs-xs: 0.79rem;
+  --fs-sm: 0.889rem;
+  --fs-base: 1.125rem;
+  --fs-lg: 1.424rem;
+  --fs-xl: 1.602rem;
+  --fs-2xl: 1.802rem;
+  --fs-3xl: 2.027rem;
+
+  --fs-nav-link: 1.602rem;
 
   --fm-primary: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",

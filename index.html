@@ -18,9 +18,8 @@
           <img src="/svgs/logo.svg" alt="Logo Image" />
         </a>
 
-        <nav class="[ primary-navbar ] [ xl-items-center ]">
+        <nav class="[ primary-navbar ]" id="primary-navigation">
           <ul
-            id="primary-navigation"
             aria-label="Primary"
             class="[ primary-navigation-list ] [ flex flex-col justify-center items-center ]"
             role="list">
@@ -56,71 +55,72 @@
     </header>
 
     <main class="[ main ]">
-      <section class="[ hero ] [ section ]">
-        <div class="[ container flex flex-col ]">
-          <div class="[ left ]">
-            <h1>Bring everyone together to build better products.</h1>
-            <p>
-              Manage makes it simple for software teams to plan day to day tasks
-              while keeping the larger team goals in view.
-            </p>
-            <button type="button" class="[ btn btn-primary ]">Get Started</button>
-          </div>
-          <div class="[ right ]">
-            <img src="/svgs/illustration-intro.svg" alt="" />
-          </div>
+      <section
+        class="[ hero ] [ section container flex flex-col-reverse items-center ]">
+        <div class="[ hero-left flex flex-col items-center ]">
+          <h1 class="heading-primary">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="hero-desc text-center">
+            Manage makes it simple for software teams to plan day to day tasks while
+            keeping the larger team goals in view.
+          </p>
+          <button type="button" class="[ btn btn-primary ]">Get Started</button>
+        </div>
+        <div class="[ hero-right ]">
+          <img src="/svgs/illustration-intro.svg" alt="" />
         </div>
       </section>
-      <section class="[ explain ] [ section ]">
-        <div class="[ container flex flex-col ]">
-          <div class="[ left ]">
-            <h2>What&apos;s different about Manage?</h2>
-            <p>
-              Manage provides all the functionality your team needs, without the
-              complexity. Our software is tailor-made for modern digital product
-              teams.
-            </p>
-          </div>
-          <div class="[ right ]">
-            <ul class="[ explain-list ]" role="list">
-              <li>
-                <h3>Track company-wide progress</h3>
-                <p>
-                  See how your day-to-day tasks fit into the wider vision. Go from
-                  tracking progress at the milestone level all the way done to the
-                  smallest of details. Never lose sight of the bigger picture again.
-                </p>
-              </li>
-              <li>
-                <h3>Advanced built-in reports</h3>
-                <p>
-                  Set internal delivery estimates and track progress toward company
-                  goals. Our customisable dashboard helps you build out the reports
-                  you need to keep key stakeholders informed.
-                </p>
-              </li>
-              <li>
-                <h3>Everything you need in one place</h3>
-                <p>
-                  Stop jumping from one service to another to communicate, store
-                  files, track tasks and share documents. Manage offers an all-in-one
-                  team productivity solution.
-                </p>
-              </li>
-            </ul>
-          </div>
+      <section class="[ explain ] [ section container flex flex-col ]">
+        <div class="[ explain-left ]">
+          <h2 class="explain-heading-secondary">
+            What&apos;s different about Manage?
+          </h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product teams.
+          </p>
+        </div>
+        <div class="[ explain-right ]">
+          <ul class="[ explain-list ]" role="list">
+            <li>
+              <h3 class="explain-heading-tertiary">Track company-wide progress</h3>
+              <p>
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture again.
+              </p>
+            </li>
+            <li>
+              <h3 class="explain-heading-tertiary">Advanced built-in reports</h3>
+              <p>
+                Set internal delivery estimates and track progress toward company
+                goals. Our customisable dashboard helps you build out the reports you
+                need to keep key stakeholders informed.
+              </p>
+            </li>
+            <li>
+              <h3 class="explain-heading-tertiary">
+                Everything you need in one place
+              </h3>
+              <p>
+                Stop jumping from one service to another to communicate, store files,
+                track tasks and share documents. Manage offers an all-in-one team
+                productivity solution.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="[ carousel ] [ section flex flex-col ]">
+      <section class="[ carousel ] [ section flex flex-col items-center ]">
         <h2 class="[ text-center ]">What they&apos;ve said</h2>
         <!-- Carousel here -->
         <button type="button" class="[ btn btn-primary ]">Get Started</button>
       </section>
-      <section class="[ cta ] [ section bg-primary-red-100 ]">
-        <div class="[ container flex flex-col ]">
-          <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
-          <button type="button" class="[ btn btn-secondary ]">Get Started</button>
-        </div>
+      <section
+        class="[ cta ] [ section container flex flex-col items-center bg-primary-red-100 ]">
+        <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
+        <button type="button" class="[ btn btn-secondary ]">Get Started</button>
       </section>
     </main>
 
