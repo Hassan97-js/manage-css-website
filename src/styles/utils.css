@@ -49,6 +49,10 @@
 }
 
 /* Spacing */
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
 .mx-auto {
   margin-inline: auto;
 }
@@ -64,9 +68,6 @@
 }
 
 /* Backgroud */
-.bg-primary-red-100 {
-  background: var(--primary-red-100);
-}
 
 /* Text */
 .text-center {

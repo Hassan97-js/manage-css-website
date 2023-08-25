@@ -49,7 +49,7 @@
           class="[ hamburger ] [ xl-hidden ]"
           aria-controls="primary-navigation">
           <span class="[ visually-hidden ]">Menu</span>
-          <span aria-hidden="true" class="hamburger-icon"></span>
+          <span aria-hidden="true" class="[ hamburger-icon ]"></span>
         </button>
       </div>
     </header>
@@ -58,10 +58,10 @@
       <section
         class="[ hero ] [ section container flex flex-col-reverse items-center ]">
         <div class="[ hero-left flex flex-col items-center ]">
-          <h1 class="heading-primary">
+          <h1 class="[ heading-primary ]">
             Bring everyone together to build better products.
           </h1>
-          <p class="hero-desc text-center">
+          <p>
             Manage makes it simple for software teams to plan day to day tasks while
             keeping the larger team goals in view.
           </p>
@@ -73,18 +73,16 @@
       </section>
       <section class="[ explain ] [ section container flex flex-col ]">
         <div class="[ explain-left ]">
-          <h2 class="explain-heading-secondary">
-            What&apos;s different about Manage?
-          </h2>
+          <h2>What&apos;s different about Manage?</h2>
           <p>
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product teams.
           </p>
         </div>
         <div class="[ explain-right ]">
-          <ul class="[ explain-list ]" role="list">
+          <ul class="[ explain-list ] [ flow ]" role="list">
             <li>
-              <h3 class="explain-heading-tertiary">Track company-wide progress</h3>
+              <h3 class="[ heading-tertiary ]">Track company-wide progress</h3>
               <p>
                 See how your day-to-day tasks fit into the wider vision. Go from
                 tracking progress at the milestone level all the way done to the
@@ -92,7 +90,7 @@
               </p>
             </li>
             <li>
-              <h3 class="explain-heading-tertiary">Advanced built-in reports</h3>
+              <h3 class="[ heading-tertiary ]">Advanced built-in reports</h3>
               <p>
                 Set internal delivery estimates and track progress toward company
                 goals. Our customisable dashboard helps you build out the reports you
@@ -100,9 +98,7 @@
               </p>
             </li>
             <li>
-              <h3 class="explain-heading-tertiary">
-                Everything you need in one place
-              </h3>
+              <h3 class="[ heading-tertiary ]">Everything you need in one place</h3>
               <p>
                 Stop jumping from one service to another to communicate, store files,
                 track tasks and share documents. Manage offers an all-in-one team
@@ -113,46 +109,48 @@
         </div>
       </section>
       <section class="[ carousel ] [ section flex flex-col items-center ]">
-        <h2 class="[ text-center ]">What they&apos;ve said</h2>
-        <!-- Carousel here -->
+        <h2 class="[ heading-secondary ]">What they&apos;ve said</h2>
+        <p>Carousel Here</p>
         <button type="button" class="[ btn btn-primary ]">Get Started</button>
       </section>
-      <section
-        class="[ cta ] [ section container flex flex-col items-center bg-primary-red-100 ]">
-        <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
-        <button type="button" class="[ btn btn-secondary ]">Get Started</button>
+      <section class="[ cta ] [ section ]">
+        <div class="[ cta-inner ] [ container flex flex-col items-center ]">
+          <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
+          <button type="button" class="[ btn btn-secondary ]">Get Started</button>
+        </div>
       </section>
     </main>
 
-    <footer class="[ primary-footer ] [ text-center py-12 ]">
-      <div class="[ container flex flex-col xl-flex-row xl-justify-between ]">
+    <footer class="[ primary-footer ] [ py-12 ]">
+      <div
+        class="[ primary-footer-inner ] [ container flex flex-col-reverse justify-center items-center ]">
         <div class="[ col ]">
           <a class="[ logo-link ]" href="#">
             <img src="/svgs/logo.svg" alt="Logo Image" />
           </a>
 
-          <ul role="list" class="social-links" aria-label="Social Links">
-            <li class="social-link">
+          <ul role="list" class="[ social-links ]" aria-label="Social Links">
+            <li class="[ social-item ]">
               <a aria-label="A Facebook icon link" href="#">
                 <img src="/svgs/icon-facebook.svg" alt="A Facebook icon" />
               </a>
             </li>
-            <li class="social-link">
+            <li class="[ social-item ]">
               <a aria-label="An Instagram icon link" href="#">
                 <img src="/svgs/icon-instagram.svg" alt="An Instagram icon" />
               </a>
             </li>
-            <li class="social-link">
+            <li class="[ social-item ]">
               <a aria-label="A Pinterest icon link" href="#">
                 <img src="/svgs/icon-pinterest.svg" alt="A pinterest icon"
               /></a>
             </li>
-            <li class="social-link">
+            <li class="[ social-item ]">
               <a aria-label="A Twitter icon link" href="#">
                 <img src="/svgs/icon-twitter.svg" alt="A Twitter icon"
               /></a>
             </li>
-            <li class="social-link">
+            <li class="[ social-item ]">
               <a aria-label="A Youtube icon link" href="#">
                 <img src="/svgs/icon-youtube.svg" alt="A Youtube icon" />
               </a>
@@ -164,7 +162,7 @@
             class="[ bottom-navbar-list ] [ flex ]"
             role="list"
             aria-label="Footer">
-            <div class="col">
+            <div class="[ flow ]">
               <li>
                 <a href="#">Home</a>
               </li>
@@ -178,7 +176,7 @@
                 <a href="#">About Us</a>
               </li>
             </div>
-            <div class="col">
+            <div class="[ flow ]">
               <li>
                 <a href="#">Privacy</a>
               </li>
@@ -191,19 +189,18 @@
             </div>
           </ul>
         </nav>
-        <div class="[ col ]">
-          <form>
-            <div class="[ subscribe ] [ form-control ]">
+        <div class="[ primary-footer-col ]">
+          <form class="[ primary-footer-form ] [ flex items-center justify-center ]">
+            <div class="[ subscribe ]">
               <input type="email" class="[ subscribe-input ]" />
             </div>
 
             <button type="submit" class="[ btn btn-primary ]">Go</button>
           </form>
-
-          <p class="[ copyright ] [ mx-auto text-center ]">
-            &copy; Copyright 2024. All rights reserved
-          </p>
         </div>
+      </div>
+      <div class="container">
+        <p class="[ copyright ]">&copy; Copyright 2024. All rights reserved</p>
       </div>
     </footer>
 

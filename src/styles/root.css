@@ -36,6 +36,7 @@
 
   /* Radiuses */
   --radius-base: 0.25rem;
+  --radius-full: 100vmax;
 
   /* Shadows */
   --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);

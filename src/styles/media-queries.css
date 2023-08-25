@@ -27,22 +27,29 @@
     --fs-3xl: 2.566rem;
   }
 
-  .heading-primary {
+  :is(.hero h1, .hero p) {
     text-align: left;
   }
 
-  .hero {
+  :is(.explain h2, .explain h3, .explain p) {
+    text-align: left;
+    margin-inline: unset;
+  }
+
+  :is(.hero, .explain) {
     flex-direction: row;
     align-items: flex-start;
     gap: var(--spacer-20);
   }
 
-  .hero-left {
+  :is(.hero-left, .hero-right, .explain-left, .explain-right) {
     align-items: flex-start;
+    width: 100%;
+    flex: 1 1 100%;
   }
 
-  .hero-desc {
-    text-align: left;
+  .hero-right img {
+    width: 100%;
   }
 }
 /* xl:1280px */
@@ -96,13 +103,18 @@
     flex-direction: row;
   }
 
-  .primary-navbar ul a {
+  .primary-navbar a {
     font-weight: var(--fw-semi-bold);
   }
 
   .logo-link {
     width: auto;
     margin-top: 0;
+  }
+
+  .primary-footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /* 2xl:1536px */
