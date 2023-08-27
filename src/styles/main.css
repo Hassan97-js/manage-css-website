@@ -43,3 +43,13 @@ a {
   color: var(--primary-blue-100);
   letter-spacing: -0.04em;
 }
+
+::-moz-selection {
+  color: var(--neutral-light-gray);
+  background: var(--primary-red-100);
+}
+
+::selection {
+  color: var(--neutral-light-gray);
+  background: var(--primary-red-100);
+}

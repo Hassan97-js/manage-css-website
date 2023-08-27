@@ -112,9 +112,22 @@
     margin-top: 0;
   }
 
+  .logo-link img {
+    width: 9.375rem;
+  }
+
   .primary-footer-inner {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .cta-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cta h2 {
+    text-align: left;
   }
 }
 /* 2xl:1536px */

@@ -115,43 +115,48 @@
       </section>
       <section class="[ cta ] [ section ]">
         <div class="[ cta-inner ] [ container flex flex-col items-center ]">
-          <h2 class="[ text-light-gray ]">Simplify how your team works today.</h2>
+          <h2 class="[ text-light-gray text-center ]">
+            Simplify how your team works today.
+          </h2>
           <button type="button" class="[ btn btn-secondary ]">Get Started</button>
         </div>
       </section>
     </main>
 
-    <footer class="[ primary-footer ] [ py-12 ]">
+    <footer class="[ primary-footer ]">
       <div
         class="[ primary-footer-inner ] [ container flex flex-col-reverse justify-center items-center ]">
-        <div class="[ col ]">
+        <div class="[ primary-footer-social flex flex-col-reverse items-center ]">
           <a class="[ logo-link ]" href="#">
-            <img src="/svgs/logo.svg" alt="Logo Image" />
+            <img src="/svgs/footer-logo.svg" alt="Logo Image" />
           </a>
 
-          <ul role="list" class="[ social-links ]" aria-label="Social Links">
+          <ul role="list" class="[ social-links flex ]" aria-label="Social Links">
             <li class="[ social-item ]">
-              <a aria-label="A Facebook icon link" href="#">
+              <a class="[ social-link ]" aria-label="A Facebook icon link" href="#">
                 <img src="/svgs/icon-facebook.svg" alt="A Facebook icon" />
               </a>
             </li>
             <li class="[ social-item ]">
-              <a aria-label="An Instagram icon link" href="#">
+              <a
+                class="[ social-link ]"
+                aria-label="An Instagram icon link"
+                href="#">
                 <img src="/svgs/icon-instagram.svg" alt="An Instagram icon" />
               </a>
             </li>
             <li class="[ social-item ]">
-              <a aria-label="A Pinterest icon link" href="#">
+              <a class="[ social-link ]" aria-label="A Pinterest icon link" href="#">
                 <img src="/svgs/icon-pinterest.svg" alt="A pinterest icon"
               /></a>
             </li>
             <li class="[ social-item ]">
-              <a aria-label="A Twitter icon link" href="#">
+              <a class="[ social-link ]" aria-label="A Twitter icon link" href="#">
                 <img src="/svgs/icon-twitter.svg" alt="A Twitter icon"
               /></a>
             </li>
             <li class="[ social-item ]">
-              <a aria-label="A Youtube icon link" href="#">
+              <a class="[ social-link ]" aria-label="A Youtube icon link" href="#">
                 <img src="/svgs/icon-youtube.svg" alt="A Youtube icon" />
               </a>
             </li>
@@ -163,27 +168,27 @@
             role="list"
             aria-label="Footer">
             <div class="[ flow ]">
-              <li>
+              <li class="text-center">
                 <a href="#">Home</a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="#">Pricing</a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="#">Product</a>
               </li>
-              <li>
+              <li class="text-center">
                 <a href="#">About Us</a>
               </li>
             </div>
             <div class="[ flow ]">
-              <li>
+              <li class="text-left">
                 <a href="#">Privacy</a>
               </li>
-              <li>
+              <li class="text-left">
                 <a href="#">Community</a>
               </li>
-              <li>
+              <li class="text-left">
                 <a href="#">Privacy Policy</a>
               </li>
             </div>
@@ -192,7 +197,10 @@
         <div class="[ primary-footer-col ]">
           <form class="[ primary-footer-form ] [ flex items-center justify-center ]">
             <div class="[ subscribe ]">
-              <input type="email" class="[ subscribe-input ]" />
+              <input
+                type="email"
+                class="[ subscribe-input ]"
+                placeholder="Updates in your inbox..." />
             </div>
 
             <button type="submit" class="[ btn btn-primary ]">Go</button>

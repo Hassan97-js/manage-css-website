@@ -108,7 +108,7 @@
 }
 
 .logo-link {
-  width: 6.875rem;
+  width: 8.75rem;
   margin-top: 0.7em;
 }
 
@@ -172,11 +172,14 @@
 
 .cta h2 {
   letter-spacing: -0.03em;
+  max-width: 19ch;
 }
 
 /* Footer */
 .primary-footer {
   background: var(--neutral-dark-blue);
+  padding-top: var(--spacer-20);
+  padding-bottom: var(--spacer-20);
 }
 
 .primary-footer-inner {
@@ -204,6 +207,23 @@
 .bottom-navbar-list a {
   text-decoration: none;
   color: var(--neutral-light-gray);
+}
+
+.primary-footer-social {
+  gap: var(--spacer-8);
+}
+
+.logo-link img {
+  width: 18.75rem;
+}
+
+.social-links {
+  gap: var(--spacer-5);
+}
+
+.social-link img {
+  display: inline-block;
+  width: 1.5rem;
 }
 
 .copyright {
