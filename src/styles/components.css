@@ -33,7 +33,7 @@
 
 /* Hamburger */
 .hamburger {
-  padding: 0.5em;
+  padding: 1em;
   background: none;
 }
 
@@ -100,6 +100,12 @@
 .primary-navbar a {
   font-size: var(--fs-nav-link);
   font-weight: var(--fw-bold);
+  transition: all 0.2s ease;
+}
+
+.primary-navbar a:hover,
+.primary-navbar a:focus {
+  color: var(--primary-red-100);
 }
 
 :is(.primary-navbar a, .logo-link) {

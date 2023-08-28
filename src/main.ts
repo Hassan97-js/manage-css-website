@@ -9,6 +9,12 @@ const menuTogglerButton = document.getElementById("menu-toggler");
 const primaryNavbarElement = document.body.querySelector(".primary-navbar");
 
 menuTogglerButton?.addEventListener("click", () => {
+  if (primaryNavbarElement?.classList.contains("active")) {
+    menuTogglerButton.setAttribute("aria-expanded", "false");
+  } else {
+    menuTogglerButton.setAttribute("aria-expanded", "true");
+  }
+
   menuTogglerButton.classList.toggle("active");
   primaryNavbarElement?.classList.toggle("active");
 });
